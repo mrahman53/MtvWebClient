@@ -2,16 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [MTV Automation Script ]">
   <parameter name="os" value="OS X"/>
-  <parameter name="os_version" value="${os_version}"/>
+  <parameter name="os_version" value="Sierra"/>
   <parameter name="browserVersion" value="53.0"/>
-  <parameter name="browserName" value="chrome,-Dos_version=Sierra"/>
+  <parameter name="browserName" value="chrome"/>
   <parameter name="url" value="http://www.mtv.com/"/>
   <test name="MTV Home(failed)">
     <classes>
       <class name="menu.MenuTest">
         <methods>
+          <include name="afterEachTestMethod"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
           <include name="menu"/>
           <include name="getLocalDriver"/>
+          <include name="startExtent"/>
           <include name="cleanUp"/>
         </methods>
       </class> <!-- menu.MenuTest -->

@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-MTV_Automation_Script_">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MTV_Automation_Script_" title="menu.MenuTest" hash-for-method="menu">menu</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MTV_Automation_Script_" title="content.TvShowSelection" hash-for-method="selectingContent">selectingContent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MTV_Automation_Script_ -->
@@ -120,14 +120,14 @@
           <div class="suite-MTV_Automation_Script_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">menu.MenuTest</span>
+              <span class="class-name">content.TvShowSelection</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="menu">
-                  </a> <!-- menu -->
-                  <span class="method-name">menu</span>
+                  <a name="selectingContent">
+                  </a> <!-- selectingContent -->
+                  <span class="method-name">selectingContent</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,13 +143,13 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;MTV Automation Script &quot;&gt;
   &lt;parameter name=&quot;os&quot; value=&quot;OS X&quot;/&gt;
-  &lt;parameter name=&quot;os_version&quot; value=&quot;${os_version}&quot;/&gt;
+  &lt;parameter name=&quot;os_version&quot; value=&quot;Sierra&quot;/&gt;
   &lt;parameter name=&quot;browserVersion&quot; value=&quot;53.0&quot;/&gt;
   &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;http://www.mtv.com/&quot;/&gt;
   &lt;test name=&quot;MTV Home&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;menu.MenuTest&quot;/&gt;
+      &lt;class name=&quot;content.TvShowSelection&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MTV Home --&gt;
 &lt;/suite&gt; &lt;!-- MTV Automation Script  --&gt;
@@ -191,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'menu')
-data.setCell(0, 2, 'menu.MenuTest')
-data.setCell(0, 3, 10304);
+data.setCell(0, 1, 'selectingContent')
+data.setCell(0, 2, 'content.TvShowSelection')
+data.setCell(0, 3, 14102);
 window.suiteTableData['MTV_Automation_Script_']= { tableData: data, tableDiv: 'times-div-MTV_Automation_Script_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-MTV_Automation_Script_">
               </div> <!-- times-div-MTV_Automation_Script_ -->
             </div> <!-- times-div -->
@@ -210,9 +210,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">menu</span>
+              <span class="reporter-method-name">selectingContent</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">MenuPage: get Latest Episode Title On Selected Tv Show</span>
+                <span class="reporter-method-output">Browser is Launched</span>
+                <span class="reporter-method-output">TvShowSelection: selecting Content</span>
+                <span class="reporter-method-output">ShowMenuPage: get Latest Episode Title On Selected Tv Show</span>
+                <span class="reporter-method-output">MainMenuPage: mouse Hover On S How Menu</span>
+                <span class="reporter-method-output">MainMenuPage: get Shows Web Element</span>
+                <span class="reporter-method-output">ShowMenuPage: get Shows A To Z Web Element</span>
+                <span class="reporter-method-output">ShowMenuPage: click On Desired Show From Multiple Series</span>
+                <span class="reporter-method-output">ShowMenuPage: get Select Tv Show Web Element</span>
+                <span class="reporter-method-output">ShowMenuPage: get Clip Title</span>
+                <span class="reporter-method-output">ShowMenuPage: get Clip Title Web Element</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -230,33 +239,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">menu.MenuTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">content.TvShowSelection</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">extentSetup(org.testng.TestRunner@1d269ed7)</span>
+                <span class="method-name">extentSetup(org.testng.TestRunner@3ad394e6)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">getLocalDriver(OS X, ${os_version}, chrome, 53.0, http://www.mtv.com/)</span>
-                <span class="method-start">5465 ms</span>
+                <span class="method-name">getLocalDriver(OS X, Sierra, chrome, 53.0, http://www.mtv.com/)</span>
+                <span class="method-start">5293 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startExtent(public void menu.MenuTest.menu())</span>
-                <span class="method-start">21991 ms</span>
+                <span class="method-name">startExtent(public void content.TvShowSelection.selectingContent())</span>
+                <span class="method-start">11467 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">menu</span>
-                <span class="method-start">22000 ms</span>
+                <span class="method-name">selectingContent</span>
+                <span class="method-start">11474 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=menu status=SUCCESS method=MenuTest.menu()[pri:0, instance:menu.MenuTest@90f6bfd] o...)</span>
-                <span class="method-start">32304 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=selectingContent status=SUCCESS method=TvShowSelection.selectingContent()[pri:0, in...)</span>
+                <span class="method-start">25577 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">32989 ms</span>
+                <span class="method-start">26202 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">generateReport</span>
+                <span class="method-start">31222 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import reporting.ExtentManager;
+import reporting.ExtentTestManager;
 
 import java.io.File;
 import java.io.PrintWriter;
@@ -84,7 +86,7 @@ public class CommonAPI {
     @BeforeMethod
     public void getLocalDriver(@Optional("OS X") String os,@Optional("Sierra") String os_version, @Optional("chrome") String browserName, @Optional("34")
             String browserVersion, @Optional("http://www.mtv.com") String url){
-        System.out.println(os+os_version+browserName+browserVersion);
+
         if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.chrome.driver", "./src/driver/chromedriver");
